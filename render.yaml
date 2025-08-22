@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: n8n
+    env: docker
+    plan: free # Или starter/pro, если нужен больший ресурс
+    envVars:
+      - key: N8N_HOST
+        value: "n8n-test-2-6f56.onrender.com/"
+      - key: N8N_PORT
+        value: "433"
+      - key: WEBHOOK_URL
+        value: "https://n8n-test-2-6f56.onrender.com/"
